@@ -1,0 +1,24 @@
+<template name="navbar">
+  <nav class = "amber accent-3">
+    <div class="nav-wrapper">
+      {{#if(currentUser)}}
+      <a href="/" class="brand-logo left hide-on-med-and-down">
+        Home
+      </a>
+      {{else}}
+      <a href="/" class="brand-logo left hide-on-med-and-down">
+        Home
+      </a>
+      {{/if}}
+      <ul class="right hide-on-med-and-down">
+        {{#if currentUser}}
+          <li><a id="logout" >Logout</a></li>
+        {{else}}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login" >Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+  
+</template>

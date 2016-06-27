@@ -1,0 +1,60 @@
+<template name="register">
+<br>
+<div class="row">
+  <div class="offset-s4 col s4">
+    <div class="card">
+      <div class="container ">
+        <br>
+        <h4 class="center'align'">Bienvenido</h4>
+        <div class="row">
+          <div class="input-field offset-s2 col s8">
+            <input id = "firstnameInput" type="text" class="validate">
+            <label for="firstnameInput">Primer Nombre</label>
+          </div>
+          <div class="input-field offset-s2 col s8">
+            <input id = "lastnameInput" type="text" class="validate">
+            <label for="lastnameInput">Apellido(s)</label>
+          </div>
+          <div class="input-field offset-s2 col s8">
+            <input id = "emailInput" type="email" class="validate">
+            <label for="emailInput" data-error="Correo no válido.">Email</label>
+          </div>
+          <div class="input-field offset-s2 col s8">
+            <input id = "passwordInput" type="password" class="validate">
+            <label for="passwordInput">Contraseña</label>
+          </div>
+
+          <!--<div class="container center ">
+            <div class="left-align">
+              <br>
+              <p>Tipo de Usuario</p>
+            </div>
+            
+              <form action="#">
+                <p>
+                  <input class="with-gap" name="groupUser" type="radio" id="RadioRegular" value="Regular">
+                  <label for="RadioRegular">Regular</label>
+                </p>
+                <p>
+                  <input class="with-gap" name="groupUser" type="radio" id="RadioProfesional" value="Profesional">
+                  <label for="RadioProfesional">Profesional</label>
+                </p>
+                <p>
+                  <input class="with-gap" name="groupUser" type="radio" id="RadioAdmin" value="Administrador" >
+                  <label for="RadioAdmin">Administrador</label>
+                </p>
+              </form>
+          </div>-->
+
+        </div>
+      </div>
+      <div class="container center">
+        <a id="regist" class="waves-effect waves-light btn light-blue darken-1"><i class="material-icons left">perm_identity</i>Registrarse</a>
+        <br>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="col s4"></div>
+</div>
+</template>
