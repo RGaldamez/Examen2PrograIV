@@ -1,0 +1,1 @@
+export const Recetas = new Mongo.Collection('recetas');
