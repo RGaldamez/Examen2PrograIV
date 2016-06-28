@@ -3,9 +3,9 @@ import {Router} from "meteor/iron:router";
 import '../ui/layout/layout.js';
 import '../ui/navbar/navbar.js';
 import '../ui/frontpage/frontpage.js';
-import '../ui/register/register.js';
 import '../ui/login/login.js';
 import '../ui/home/home.js';
+import '../ui/register/register.js';
 
 Router.configure({
     layoutTemplate:"layout"

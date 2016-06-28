@@ -1,8 +1,11 @@
 import { Meteor } from 'meteor/meteor';
-import { Posts } from '../imports/api/post.js';
+import { Ingredientes } from '../imports/api/ingrediente.js';
+import { Recetas } from '../imports/api/receta.js';
 
 Meteor.startup(() => {
   // code to run on server at startup
+
+  
 });
 
 

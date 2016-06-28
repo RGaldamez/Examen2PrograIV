@@ -1,31 +1,7 @@
 <template name = "home">
     <br><br>
-    <div class="row">
+    <a class="waves-effect waves-light btn" id="ir_ingredientes">Ingredientes</a>
+    <a class="waves-effect waves-light btn" id="ir_recetas">Recetas</a>
 
-        <div class="col s4 m4 l4">
-            
-            <div class="input-field">
-                <input type="text" id="post_title">
-                <label for="post_title">Title</label>
-            </div>
-                
-            <div class="input-field">
-                <input type="text" id="post_description">
-                <label for="post_description">Description</label>
-            </div>
-                
-            <a id="post_add" class="waves-effect waves-light btn light-blue darken-1">Add Post</a>
-        </div>
-        <div class="col s8 m8 l8">
-            {{#each posts}}
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title"> {{title}}</span>
-                        <p>{{description}}</p>
-                    </div>
-                </div>
-            {{/each}}
-        </div>
-    </div>
 
 </template>
