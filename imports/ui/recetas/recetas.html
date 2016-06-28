@@ -1,0 +1,52 @@
+<template name = "recetas">
+    <br><br>
+    {{#if currentUser}}
+        <a class="waves-effect waves-light btn" id="ir_ingredientes">Ingredientes</a>
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s6 m6 l6">
+                    <input type="text" id="rec_nombre">
+                    <label for="rec_nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <input type="text" id="rec_descripcion">
+                    <label for="rec_descripcion">descripcion</label>
+                </div>
+            </div>  
+        </div>
+        <h5>lista de ingredients que se pueden agregar</h5>
+         <div class="container">
+
+            <ul class="collapsible" data-collapsible="accordion">
+                {{#each ingredientes }}
+                <li>
+                    <div class="collapsible-header">{{nombre}}</div>
+                    <div class="collapsible-body">
+                        <p><b>Descripcion: </b></p>{{descripcion}}
+                        <p><b>Formula:</b> {{formula}}</p>
+                        <a class="waves-effect waves-light btn" id="add_ingredientes2">Agregar</a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>   
+
+                        <a class="waves-effect waves-light btn" id="add_receta">Agregar Receta</a>
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+        
+    {{/if}}
+</template>

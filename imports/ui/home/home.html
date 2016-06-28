@@ -1,7 +1,42 @@
 <template name = "home">
-    <br><br>
-    <a class="waves-effect waves-light btn" id="ir_ingredientes">Ingredientes</a>
-    <a class="waves-effect waves-light btn" id="ir_recetas">Recetas</a>
+    {{#if currentUser}}
+        <br><br>
+        <a class="waves-effect waves-light btn" id="ir_ingredientes">Ingredientes</a>
+        <a class="waves-effect waves-light btn" id="ir_recetas">Recetas</a>
 
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s6 m6 l6">
+                    <input type="text" id="ing_nombre" >
+                    <label for="ing_nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <input type="text" id="ing_descripcion" >
+                    <label for="ing_descripcion">Description</label>
+                </div>
+                <div class="input-field col s8 m8 l8">
+                    <input type="text" id="ing_formula">
+                    <label for="ing_formula">Formula</label>
+                </div>
+                <a class="waves-effect waves-light btn" id="ing_add">Agregar Ingrediente</a>
+            </div>
+        </div>
+
+        <div class="container">
+
+        
+            <ul class="collapsible" data-collapsible="accordion">
+                {{#each ingredientes }}
+                <li>
+                    <div class="collapsible-header">{{nombre}}</div>
+                    <div class="collapsible-body">
+                        <p><b>Descripcion: </b></p>{{descripcion}}
+                        <p><b>Formula:</b> {{formula}}</p>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>    
+    {{/if}}
 
 </template>

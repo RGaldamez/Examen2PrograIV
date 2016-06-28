@@ -5,14 +5,10 @@ import '../ui/navbar/navbar.js';
 import '../ui/frontpage/frontpage.js';
 import '../ui/login/login.js';
 import '../ui/home/home.js';
-import '../ui/register/register.js';
+import '../ui/recetas/recetas.js';
 
 Router.configure({
     layoutTemplate:"layout"
-});
-
-Router.route('register',function () {
-    this.render("register");
 });
 
 Router.route('login',function () {
@@ -25,4 +21,8 @@ Router.route('/', function () {
 
 Router.route('home', function () {
     this.render("home");
+})
+
+Router.route('recetas', function () {
+    this.render("recetas");
 })
